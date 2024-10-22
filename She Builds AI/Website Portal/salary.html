@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Comparison</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>Salary Comparison</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discussion.html">Discussion Forum</a></li>
+                <li><a href="salary.html">Salary Comparison</a></li>
+                <li><a href="legal.html">Legal Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Compare Your Salary with Market Standards</h2>
+        <form id="salary-form">
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+
+            <label for="salary">Your Salary:</label>
+            <input type="number" id="salary" required>
+
+            <button type="submit">Compare</button>
+        </form>
+
+        <div id="comparison-result"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Women Workplace Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

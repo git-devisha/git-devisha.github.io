@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Forum</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>Discussion Forum</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discussion.html">Discussion Forum</a></li>
+                <li><a href="salary.html">Salary Comparison</a></li>
+                <li><a href="legal.html">Legal Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Share Your Experience</h2>
+        <form id="discussion-form">
+            <textarea id="discussion-text" placeholder="Write about your work environment..." required></textarea>
+            <button type="submit">Post</button>
+        </form>
+
+        <div id="discussion-list">
+            <h3>Recent Discussions</h3>
+            <ul id="posts"></ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Women Workplace Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
