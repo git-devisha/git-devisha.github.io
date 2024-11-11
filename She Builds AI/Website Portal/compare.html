@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Companies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-pink-50 text-gray-800">
+    <header class="border-b bg-pink-100">
+        <div class="container mx-auto flex justify-between items-center py-4">
+            <div class="text-2xl font-bold text-pink-600">CareQ</div>
+            <nav class="space-x-4">
+                <a class="text-gray-600" href="#">Community</a>
+                <a class="text-gray-600" href="#">Jobs</a>
+                <a class="text-pink-600 border-b-2 border-pink-600" href="#">Companies</a>
+                <a class="text-gray-600" href="#">Salaries</a>
+                <a class="text-gray-600" href="#">For employers</a>
+            </nav>
+            <div class="space-x-4">
+                <button class="text-gray-600"><i class="fas fa-search"></i> Search</button>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded">Sign in</button>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto py-8">
+        <h1 class="text-3xl font-bold mb-4 text-pink-600">Compare Companies</h1>
+        <p class="text-gray-600 mb-8">
+            See how working at different companies compares on a variety of workplace factors. By comparing employee ratings, salaries, reviews, pros/cons, job openings and more, you’ll feel one step ahead of the rest. All salaries and reviews are posted by employees working at these companies. Learn more about each company and apply to jobs near you.
+        </p>
+        <div class="flex space-x-4 mb-8">
+            <div class="border p-4 flex-1 bg-white rounded-lg shadow">
+                <div class="flex items-center space-x-4">
+                    <img alt="Wipro logo" class="w-12 h-12" height="50" src="https://storage.googleapis.com/a1aa/image/wyhghlTdacqjHJoO8XZG8lX7SjxyU3GiUNHrxhsYh5jY0O7E.jpg" width="50"/>
+                    <div>
+                        <h2 class="text-xl font-bold text-pink-600">Wipro</h2>
+                        <p class="text-gray-600">Information Technology Support Services</p>
+                    </div>
+                </div>
+                <button class="mt-4 bg-pink-200 text-pink-600 px-4 py-2 rounded" onclick="changeCompany()">Change</button>
+            </div>
+            <div class="border p-4 flex-1 bg-white rounded-lg shadow">
+                <a class="text-pink-600" href="#" onclick="goBack()">&lt; Go back</a>
+                <select class="mt-4 w-full border p-2 rounded" id="companySelect">
+                    <option value="">Choose a company to compare to</option>
+                    <option value="TCS">TCS</option>
+                    <option value="Infosys">Infosys</option>
+                    <option value="HCL">HCL</option>
+                    <option value="Tech Mahindra">Tech Mahindra</option>
+                </select>
+            </div>
+        </div>
+        <div id="comparisonContent">
+            <h2 class="text-2xl font-bold mb-4 text-pink-600">Salaries</h2>
+            <p class="text-gray-600 mb-4">Wipro has <span class="font-bold">47,670</span> more total submitted salaries than TCS.</p>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="border p-4 bg-white rounded-lg shadow">
+                    <h3 class="text-xl font-bold text-pink-600">Business Analyst</h3>
+                    <p class="text-gray-600">635 Salaries</p>
+                    <p class="text-xl font-bold">₹8,63,964 / yr total</p>
+                </div>
+                <div class="border p-4 bg-white rounded-lg shadow">
+                    <h3 class="text-xl font-bold text-pink-600">Business Analyst</h3>
+                    <p class="text-gray-600">148 Salaries</p>
+                    <p class="text-xl font-bold">₹7,77,758 / yr total</p>
+                </div>
+            </div>
+            <h2 class="text-2xl font-bold mb-4 mt-8 text-pink-600">Employee Reviews</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="border p-4 bg-white rounded-lg shadow">
+                    <h3 class="text-xl font-bold text-pink-600">Wipro</h3>
+                    <p class="text-gray-600">"Great place to work with ample opportunities for growth."</p>
+                    <p class="text-gray-600">- Employee Review</p>
+                </div>
+                <div class="border p-4 bg-white rounded-lg shadow">
+                    <h3 class="text-xl font-bold text-pink-600">TCS</h3>
+                    <p class="text-gray-600">"Supportive environment and good work-life balance."</p>
+                    <p class="text-gray-600">- Employee Review</p>
+                </div>
+            </div>
+            <h2 class="text-2xl font-bold mb-4 mt-8 text-pink-600">Job Openings</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="border p-4 bg-white rounded-lg shadow">
+                    <h3 class="text-xl font-bold text-pink-600">Wipro</h3>
+                    <p class="text-gray-600">Software Engineer</p>
+                    <p class="text-gray-600">Location: Bangalore</p>
+                    <button class="mt-4 bg-pink-200 text-pink-600 px-4 py-2 rounded" onclick="applyNow('Wipro', 'Software Engineer')">Apply Now</button>
+                </div>
+                <div class="border p-4 bg-white rounded-lg shadow">
+                    <h3 class="text-xl font-bold text-pink-600">TCS</h3>
+                    <p class="text-gray-600">Data Analyst</p>
+                    <p class="text-gray-600">Location: Mumbai</p>
+                    <button class="mt-4 bg-pink-200 text-pink-600 px-4 py-2 rounded" onclick="applyNow('TCS', 'Data Analyst')">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
