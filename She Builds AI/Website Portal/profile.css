@@ -1,0 +1,56 @@
+body {
+    background-color: #ffe6f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #d5006d;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #d5006d;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d5006d;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d5006d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b0004d;
+}
+
+.profile-output {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fce4ec;
+    border: 1px solid #d5006d;
+    border-radius: 5px;
+}

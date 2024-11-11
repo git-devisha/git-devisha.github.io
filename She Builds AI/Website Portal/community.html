@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Community Forum</title>
+    <link rel="stylesheet" href="community.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Women's Community Forum</h1>
+        <p>Discuss your workplace problems and life issues with supportive women.</p>
+
+        <div class="chat-window">
+            <div id="discussion-list" class="discussion-list"></div>
+        </div>
+
+        <form id="discussion-form" class="discussion-form">
+            <input type="text" id="username" required placeholder="Your Name">
+            <textarea id="issue" rows="2" required placeholder="Describe your issue..."></textarea>
+            <button type="submit">Post Discussion</button>
+        </form>
+    </div>
+
+    <script src="community.js"></script>
+</body>
+</html>
