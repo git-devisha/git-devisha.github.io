@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>Compare Companies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('https://marketplace.canva.com/EAFlbuJ-cEU/1/0/1600w/canva-pink-and-yellow-beautiful-elegant-feminine-butterfly-gradient-desktop-wallpaper-orhYGC8lcKI.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .dropdown-content {
+            display: none;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-pink-50 bg-opacity-50">
+    <!-- Header -->
+    <header class="flex items-center justify-between p-4 border-b border-pink-200 bg-white bg-opacity-80">
+        <div class="flex items-center">
+            
+            <nav class="ml-10 space-x-6">
+                <a href="#" class="text-pink-600 hover:text-pink-800">Community</a>
+                <a href="#" class="text-pink-600 hover:text-pink-800">Jobs</a>
+                <a href="#" class="text-pink-600 border-b-2 border-pink-600">Companies</a>
+                <a href="#" class="text-pink-600 hover:text-pink-800">Salaries</a>
+                <a href="#" class="text-pink-600 hover:text-pink-800">For employers</a>
+            </nav>
+        </div>
+        <div class="flex items-center space-x-4">
+            <i class="fas fa-search text-pink-600"></i>
+            <button class="px-4 py-2 bg-pink-600 text-white rounded">Sign in</button>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="flex flex-col items-center mt-10 bg-white bg-opacity-80 p-10 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold text-pink-800">Compare companies to find your perfect fit</h1>
+        <div class="flex items-center mt-8 space-x-4">
+            <div class="relative dropdown">
+                <input type="text" placeholder="Company name" class="border border-pink-300 rounded p-2 w-64">
+                <div class="absolute top-full left-0 w-full bg-white border border-pink-300 mt-1 rounded shadow-lg dropdown-content">
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Adani Group <span class="text-pink-500">www.adani.com</span></div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Adani Power <span class="text-pink-500">www.adanipower.com</span></div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Adani Wilmar <span class="text-pink-500">www.adaniwilmar.com</span></div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Adani Gas <span class="text-pink-500">www.adanigas.com</span></div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Indian Oil Adani</div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Reliance Industries <span class="text-pink-500">www.ril.com</span></div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Tata Group <span class="text-pink-500">www.tata.com</span></div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Infosys <span class="text-pink-500">www.infosys.com</span></div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Wipro <span class="text-pink-500">www.wipro.com</span></div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">HCL Technologies <span class="text-pink-500">www.hcltech.com</span></div>
+                </div>
+            </div>
+            <span class="text-xl font-bold text-pink-800">VS</span>
+            <div class="relative dropdown">
+                <input type="text" placeholder="Company name" class="border border-pink-300 rounded p-2 w-64">
+                <div class="absolute top-full left-0 w-full bg-white border border-pink-300 mt-1 rounded shadow-lg dropdown-content">
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Adani Group <span class="text-pink-500">www.adani.com</span></div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Adani Power <span class="text-pink-500">www.adanipower.com</span></div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Adani Wilmar <span class="text-pink-500">www.adaniwilmar.com</span></div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Adani Gas <span class="text-pink-500">www.adanigas.com</span></div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Indian Oil Adani</div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Reliance Industries <span class="text-pink-500">www.ril.com</span></div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Tata Group <span class="text-pink-500">www.tata.com</span></div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Infosys <span class="text-pink-500">www.infosys.com</span></div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">Wipro <span class="text-pink-500">www.wipro.com</span></div>
+                    <div class="p-2 hover:bg-pink-100 cursor-pointer">HCL Technologies <span class="text-pink-500">www.hcltech.com</span></div>
+                </div>
+            </div>
+        </div>
+        <button class="mt-4 px-6 py-2 bg-pink-600 text-white rounded">Compare Companies</button>
+        <p class="mt-2 text-pink-500">to compare using data only found on Glassdoor.</p>
+    </main>
+    <!-- Footer -->
+    <footer class="mt-10 text-center bg-white bg-opacity-80 p-4 rounded-lg shadow-lg">
+        <h2 class="text-xl font-bold text-pink-800">Popular Company Comparisons</h2>
+    </footer>
+</body>
+</html>
